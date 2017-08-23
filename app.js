@@ -28,8 +28,14 @@ var apos = require('apostrophe')({
 
     // REMOVE ME IMMEDIATELY if you are not running a public demo
     // that should let EVERYBODY be INSTANTLY loggged in AS ADMIN!
-    'demo-autologin': {},
+    //'demo-autologin': {},
+
+      'apostrophe-db': {
+      uri: 'mongodb://' + process.env.MONGODB_PORT_27017_TCP_ADDR + ':' + process.env.MONGODB_PORT_27017_TCP_PORT + '/mydb'
+    },
 
   }
 
 });
+
+
