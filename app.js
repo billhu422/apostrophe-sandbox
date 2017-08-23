@@ -32,6 +32,7 @@ var apos = require('apostrophe')({
 
       'apostrophe-db': {
       uri: 'mongodb://' + process.env.MONGODB_PORT_27017_TCP_ADDR + ':' + process.env.MONGODB_PORT_27017_TCP_PORT + '/mydb'
+      //    uri: 'mongodb://localhost:27017/mydb'
     },
 
   }

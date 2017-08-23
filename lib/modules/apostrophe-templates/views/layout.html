@@ -4,7 +4,7 @@
 
 
 {% block beforeMain %}
-  <div class="demo-modal">
+<!--  <div class="demo-modal">
     <div class="demo-modal-content">
       <img src="/images/demo-computer.svg" alt="ApostropheCMS Demo Site">
       <h4>Welcome to the Apostrophe Demo</h4>
@@ -14,24 +14,24 @@
       <p>Have fun!</p>
       <button>Let's Get Started</button>
     </div>
-  </div>
+  </div>-->
   <div class="off-canvas-container">
     {{ nav.nav(data, {classes: 'off-canvas-nav hide-desktop', logo: true, showChildren: true}) }}
   </div>
-  <div class="block top">
+<div class="block top">
       <div class="inner demo-inner">
         <header>
           <div class="demo-header bg-red">
-            <h5>{% block headerMessage %}
+<!--            <h5>{% block headerMessage %}
               You are using the Apostrophe demo site.
-            {% endblock %}</h5>
+            {% endblock %}</h5>-->
             {%- if not data.user and not data.user._permissions.admin -%}
               <h5 class="demo-login-button"><a href="/login"><span>&#xf090;</span>Login</a></h5>
             {%- endif -%}
-            <p><strong>Just click on text to edit it.</strong> There is no save button because <strong>your edits are saved automatically.</strong></p>
+<!--            <p><strong>Just click on text to edit it.</strong> There is no save button because <strong>your edits are saved automatically.</strong></p>
             <p>To add images, slideshow and more <strong>click the "+" icons</strong> that appear when you hover the mouse over the page.</p>
             <p>Be sure to visit the "blog" and "default" pages, and try clicking "Page Menu" to create new subpages.</p>
-            <p>Have fun!</p>
+            <p>Have fun!</p>-->
           </div>
           {{ nav.nav(data, {classes: 'hide-mobile'}) }}
           <a href="#" class="off-canvas-trigger hide-desktop">
@@ -47,7 +47,6 @@
   </div>
   <div class="block header {% block upperClass %}{% endblock %}">
     {% block headerBackground %}{% endblock %}
-
   </div>
 {% endblock %}
 
@@ -65,7 +64,7 @@
         </div>{#
       #}<div class="inline-middle width-50 align-right">
           <a class="inline-top footer-logo" href="http://punkave.com">
-            <img src="/images/demo_logo_punk.png" class="" alt="P'unk Avenue" width="150" height="32" />
+            <img src="/images/logo.png" class="" alt="P'unk Avenue" width="150" height="32" />
           </a>
         </div>
       {% endblock %}

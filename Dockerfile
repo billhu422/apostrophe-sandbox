@@ -1,5 +1,8 @@
-FROM node:6.5.0
+#FROM node:6.5.0
+FROM node:7.10.1
 
+RUN apt-get update &&\
+    apt-get install -y vim
 # Create app directory
 RUN mkdir -p /app
 WORKDIR /app
